@@ -1,5 +1,8 @@
 .card {
-  background-color: rgb(113, 109, 116);
-  width: 300px;
-  height: 350px;
+  background: linear-gradient(to top, #483698 0% 50%, #dedede 50% 100%);
+  width: 400px;
+  height: 550px;
+  border-radius: 30px;
+  margin: 30px;
+
 }

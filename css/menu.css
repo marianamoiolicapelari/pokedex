@@ -1,5 +1,18 @@
 .menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: blueviolet;
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 500px;
+  
+}
+
+.btn-menu {
+  
+  width: 180px;
+  height: 60px;
+  border-radius: 40px;
+  margin: 5px;
+
 }

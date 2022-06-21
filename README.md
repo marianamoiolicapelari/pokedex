@@ -17,10 +17,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 💡 Como executar o projeto
 
-Esse projeto foi elaborado para web. </br>
+Esse projeto foi elaborado para web e mobile. </br>
 Para acessar basta clicar no link abaixo:
 
-https://
+https://pokedex-mmc.netlify.app/
 
 ## 📝 Licença
 

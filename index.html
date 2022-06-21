@@ -19,25 +19,37 @@
 
 <body>
   <main class="container">
+
     <div class="card">
       <div class="card-title">
         <div class="title-primary">Pikachu</div>
         <div class="title-secondary">Elétrico</div>
       </div>
-      <img class="card.img" src="./assets/pikachu.png" alt="Pikachu">
-      <div class="pokemon-descriptions">
-        <p>Ataque:600</p>
+      <img class="card-img" src="./assets/pikachu.png" alt="Pikachu">
+      <div class="pokemon-status">
+        <div class="pokemon-description">
+          <h3>Descrição</h3>
+          <p class="xp">XP: 200</p>
+          <p class="attack">Ataque: 600</p>
+          <p class="defense">Defesa: 390</p>
+          <p class="speed">Velocidade: 790</p>
+        </div>
+        <div class="pokemon-habilities">
+          <h3>Habilidade</h3>
+          <p class="habilities">Choque do Trovão</p>
+          <img id="img-logo" src="./assets/Pokémon-logo.png" alt="Pokemon">
+        </div>
       </div>
     </div>
     <div class="menu">
-      <button onclick="pokemonChoose()" class="btn-menu btn-bulbasaur">Bulbasaur</button>
-      <button class="btn-menu btn-charmander">Charmander</button>
-      <button class="btn-menu btn-dragonite">Dragonite</button>
-      <button class="btn-menu btn-gengar">Gengar</button>
-      <button class="btn-menu btn-gyarados">Gyarados</button>
-      <button class="btn-menu btn-pikachu">Pikachu</button>
+      <button onclick="bulbasaurChoose()" class="btn-menu btn-bulbasaur">Bulbasaur</button>
+      <button onclick="charmanderChoose()" class="btn-menu btn-charmander">Charmander</button>
+      <button onclick="dragoniteChoose()" class="btn-menu btn-dragonite">Dragonite</button>
+      <button onclick="gengarChoose()" class="btn-menu btn-gengar">Gengar</button>
+      <button onclick="gyaradosChoose()" class="btn-menu btn-gyarados">Gyarados</button>
+      <button onclick="pikachuChoose()" class="btn-menu btn-pikachu">Pikachu</button>
       <div>
-        <img class="img-menu" src="./assets/Pokémon_GO_logo.png" alt="Pokemon">
+        <img class="logo-menu" src="./assets/Pokémon-logo.png" alt="Pokemon">
       </div>
     </div>
   </main>

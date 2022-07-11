@@ -8,15 +8,6 @@ const defense = document.querySelector('.defense')
 const speed = document.querySelector('.speed')
 const habilities = document.querySelector('.habilities')
 
-
-
-const insertValues = async () => {
-  let values = await fetch("https://pokeapi.co/api/v2/pokemon/").then(function (pokemons) {
-    return pokemons.json()
-  })
-
-}
-
 bulbasaurChoose = () => {
   titlePrimary.innerHTML = 'Bulbasaur'
   titleSecondary.innerHTML = 'Planta'

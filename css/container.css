@@ -2,8 +2,8 @@
  display: flex;
  justify-content: center;
  align-items: center;
- height: 100vh;
- background-color: #d40202;
+ min-height: 100vh;
+ background: linear-gradient(to bottom, #6AB7F5, #FFF);
 }
 
 

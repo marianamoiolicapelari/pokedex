@@ -23,32 +23,32 @@
   font-size: 1.1rem;
 }
 
-.btn-bulbasaur {
+#btn-bulbasaur {
   background-color:  #59BC38;
   background-image: cabeca-bulbasaur;
 }
 
-.btn-charmander {
+#btn-charmander {
   background-color:  #F68C00;
   
 }
 
-.btn-dragonite {
+#btn-dragonite {
   background-color:  #FABE00;
   
 }
 
-.btn-gengar {
+#btn-gengar {
   background-color:  #A28CDE;
   
 }
 
-.btn-gyarados {
+#btn-gyarados {
   background-color:  #3DD4FB;
  
 }
 
-.btn-pikachu {
+#btn-pikachu {
   background-color: #FFFC22;
   
 }

@@ -1,83 +1,71 @@
-const card = document.querySelector('.card')
-const titlePrimary = document.querySelector('.title-primary')
-const titleSecondary = document.querySelector('.title-secondary')
-const cardImg = document.querySelector('.card-img')
-const xp = document.querySelector('.xp')
-const attack = document.querySelector('.attack')
-const defense = document.querySelector('.defense')
-const speed = document.querySelector('.speed')
-const habilities = document.querySelector('.habilities')
+// const card = document.querySelector('.card')
 
-bulbasaurChoose = () => {
-  titlePrimary.innerHTML = 'Bulbasaur'
-  titleSecondary.innerHTML = 'Planta'
+const pokemonName = document.querySelector('.pokemon-name')
+const pokemonId = document.querySelector('.pokemon-id')
+const pokemonType = document.querySelector('.type')
+const cardImg = document.querySelector('.card-img')
+const card = document.querySelector('.card')
+const cardPrincipal = document.querySelector('.card-principal')
+const cardBack = document.querySelector('.card-back')
+const pokemonXp = document.querySelector('.xp')
+const pokemonHabilities = document.querySelector('.habilities')
+
+const btnBulbasaur = document.getElementById('btn-bulbasaur')
+const btnPikachu = document.getElementById('btn-pikachu')
+
+const fetchPokemon = async (pokemon) => {
+  const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`)
+  const data = await APIResponse.json()
+  return data
+}
+
+const renderBulbasaur = async (pokemon) => {
+  const data = await fetchPokemon(pokemon)
+
+  pokemonName.innerHTML = data.name
+  pokemonId.innerHTML = data.id
+  pokemonType.innerHTML = data.types[0].type.name
+  pokemonXp.innerHTML = `XP: ${data.base_experience}`
+  pokemonHabilities.innerHTML = data.abilities[1].ability.name
   cardImg.src = "./assets/bulbasaur.png"
-  xp.innerHTML = 'XP: 000'
-  attack.innerHTML = 'Ataque: 000'
-  defense.innerHTML = 'Defesa: 000'
-  speed.innerHTML = 'Velocidade: 000'
-  habilities.innerHTML = 'Venenoso'
   card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #59BC38 50% 100%)'
 }
 
-charmanderChoose = () => {
-  titlePrimary.innerHTML = 'Charmander'
-  titleSecondary.innerHTML = 'Fogo'
-  cardImg.src = "./assets/charmander.png"
-  xp.innerHTML = 'XP: 111'
-  attack.innerHTML = 'Ataque: 111'
-  defense.innerHTML = 'Defesa: 111'
-  speed.innerHTML = 'Velocidade: 111'
-  habilities.innerHTML = 'Chama'
-  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #F68C00 50% 100%)'
+
+
+function bulba(){
+  renderBulbasaur(1)
 }
 
-dragoniteChoose = () => {
-  titlePrimary.innerHTML = 'Dragonite'
-  titleSecondary.innerHTML = 'Dragão'
-  cardImg.src = "./assets/dragonite.png"
-  xp.innerHTML = 'XP: 222'
-  attack.innerHTML = 'Ataque: 222'
-  defense.innerHTML = 'Defesa: 222'
-  speed.innerHTML = 'Velocidade: 222'
-  habilities.innerHTML = 'Hipnose'
-  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #FABE00 50% 100%)'
-}
+btnBulbasaur.addEventListener("click", bulba)
 
-gengarChoose = () => {
-  titlePrimary.innerHTML = 'Gengar'
-  titleSecondary.innerHTML = 'Fantasma'
-  cardImg.src = "./assets/gengar.png"
-  xp.innerHTML = 'XP: 333'
-  attack.innerHTML = 'Ataque: 333'
-  defense.innerHTML = 'Defesa: 333'
-  speed.innerHTML = 'Velocidade: 333'
-  habilities.innerHTML = 'Venenoso'
-  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #A28CDE 50% 100%)'
-}
 
-gyaradosChoose = () => {
-  titlePrimary.innerHTML = 'Gyarados'
-  titleSecondary.innerHTML = 'Água'
-  cardImg.src = "./assets/gyarados.png"
-  xp.innerHTML = 'XP: 444'
-  attack.innerHTML = 'Ataque: 444'
-  defense.innerHTML = 'Defesa: 444'
-  speed.innerHTML = 'Velocidade: 444'
-  habilities.innerHTML = 'Intimidação'
-  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #3DD4FB 50% 100%)'
-}
 
-pikachuChoose = () => {
-  titlePrimary.innerHTML = 'Pikachu'
-  titleSecondary.innerHTML = 'Elétrico'
+const renderPikachu = async (pokemon) => {
+  const data = await fetchPokemon(pokemon)
+
+  pokemonName.innerHTML = data.name
+  pokemonId.innerHTML = data.id
+  pokemonType.innerHTML = data.types[0].type.name
+  pokemonXp.innerHTML = `XP: ${data.base_experience}`
+  pokemonHabilities.innerHTML = data.abilities[1].ability.name
   cardImg.src = "./assets/pikachu.png"
-  xp.innerHTML = 'XP: 555'
-  attack.innerHTML = 'Ataque: 555'
-  defense.innerHTML = 'Defesa: 555'
-  speed.innerHTML = 'Velocidade: 555'
-  habilities.innerHTML = 'Ataque Rápido'
   card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #FFFC22 50% 100%)'
 }
 
+btnPikachu.addEventListener("click", () => renderPikachu(25))
 
+
+// btnBulbasaur.addEventListener("click", renderBulbasaur (1) {
+//   cardBack.style.display === 'none' ? cardPrincipal.style.display = 'block' : cardBack.style.display = 'none'
+// })
+
+
+/*
+  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #3DD4FB 50% 100%)
+  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #FFFC22 50% 100%)
+  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #A28CDE 50% 100%)
+  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #FABE00 50% 100%)
+  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #F68C00 50% 100%)
+  card.style.background = 'linear-gradient(to top, #fff8bf 0% 50%, #59BC38 50% 100%)
+*/

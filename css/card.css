@@ -12,9 +12,9 @@
   margin-right: 30px;
 }
 
-/* .card-principal {
+.card-principal {
   display: none;
-} */
+}
 
 .card {
   display: flex;

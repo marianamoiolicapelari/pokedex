@@ -4,6 +4,7 @@
  align-items: center;
  min-height: 100vh;
  background: linear-gradient(to bottom, #6AB7F5, #FFF);
+ background-size: 100%;
 }
 
 

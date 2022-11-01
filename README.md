@@ -24,6 +24,6 @@ https://pokedex-mmc.netlify.app/
 
 ## 📝 Licença
 
-Este projeto está sob a licença MIT.
+Este projeto esta sobe a licença MIT.
 
 Feito por Mariana Moioli Capelari - [Entre em contato!](https://www.linkedin.com/in/mariana-moioli-capelari/)

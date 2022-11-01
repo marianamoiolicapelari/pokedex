@@ -85,7 +85,7 @@ const renderPikachu = async (pokemon) => {
 btnBulbasaur.addEventListener("click", () => renderBulbasaur(1))
 btnCharmander.addEventListener("click", () => renderCharmander(4))
 btnDragonite.addEventListener("click", () => renderDragonite(149))
-btnGyarados.addEventListener("click", () => renderGyarados(22))
+btnGyarados.addEventListener("click", () => renderGyarados(130))
 btnPikachu.addEventListener("click", () => renderPikachu(25))
 
 
@@ -93,5 +93,23 @@ btnPikachu.addEventListener("click", () => renderPikachu(25))
 btnBulbasaur.addEventListener("click", function() {
   cardBack.style.display === 'none' ? cardPrincipal.style.display = 'block' : cardBack.style.display = 'none'
 })
+
+btnCharmander.addEventListener("click", function() {
+  cardBack.style.display === 'none' ? cardPrincipal.style.display = 'block' : cardBack.style.display = 'none'
+})
+
+btnDragonite.addEventListener("click", function() {
+  cardBack.style.display === 'none' ? cardPrincipal.style.display = 'block' : cardBack.style.display = 'none'
+})
+
+btnGyarados.addEventListener("click", function() {
+  cardBack.style.display === 'none' ? cardPrincipal.style.display = 'block' : cardBack.style.display = 'none'
+})
+
+btnPikachu.addEventListener("click", function() {
+  cardBack.style.display === 'none' ? cardPrincipal.style.display = 'block' : cardBack.style.display = 'none'
+})
+
+
 
 

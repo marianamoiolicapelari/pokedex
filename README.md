@@ -5,7 +5,7 @@
 
 ## 🎨 Layout
 
-![image]()
+![image](https://github.com/marianamoiolicapelari/pokedex/blob/main/assets/layout.png)
 
 ## 🛠 Tecnologias
 

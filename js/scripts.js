@@ -7,6 +7,7 @@ const cardPrincipal = document.querySelector(".card-principal");
 const cardBack = document.querySelector(".card-back");
 const pokemonXp = document.querySelector(".xp");
 const pokemonHabilities = document.querySelector(".habilities");
+const reloadPage = document.querySelector('.logo-menu')
 
 const btnBulbasaur = document.getElementById("btn-bulbasaur");
 const btnCharmander = document.getElementById("btn-charmander");
@@ -14,6 +15,12 @@ const btnDragonite = document.getElementById("btn-dragonite");
 const btnGyarados = document.getElementById("btn-gyarados");
 const btnPikachu = document.getElementById("btn-pikachu");
 
+/**
+ * Função fetch criada para o consumo de API
+ * 
+ * @param {object} pokemon 
+ * @returns data
+ */
 const fetchPokemon = async (pokemon) => {
   const APIResponse = await fetch(
     `https://pokeapi.co/api/v2/pokemon/${pokemon}`
@@ -22,6 +29,14 @@ const fetchPokemon = async (pokemon) => {
   return data;
 };
 
+/**
+ * Função criada para renderizar os cards com os pokemons.
+ * 
+ * @param {number} id 
+ * @param {image} imagem 
+ * @param {color} background 
+ * @return void
+ */
 const renderPokemon = async (id, imagem, background) => {
   const pokemon = await fetchPokemon(id);
 
@@ -37,36 +52,44 @@ const renderPokemon = async (id, imagem, background) => {
   );
 };
 
-const viewCard = () => {
-  cardBack.style.display === 'none' ? cardBack.style.display = 'block' : cardBack.style.display = 'none'
-  cardPrincipal.style.display === 'block' ? cardPrincipal.style.display = 'none' : cardPrincipal.style.display = 'block'
-  
+/**
+ * Função criada para fazer a troca entre os cards frente e verso
+ * 
+ * @return void
+ */
+const exchangeCards  = () => {
+  cardBack.style.display = 'none' 
+  cardPrincipal.style.display = 'block' 
 }
 
 btnBulbasaur.addEventListener("click", () => {
   renderPokemon(1, "bulbasaur.png", "#59bc38")
-  viewCard()
+  exchangeCards()
 });
 
 btnCharmander.addEventListener("click", () => {
   renderPokemon(4, "charmander.png", " #F68C00")
-  viewCard()
+  exchangeCards()
 });
 
 btnDragonite.addEventListener("click", () => {
   renderPokemon(149, "dragonite.png", "#FABE00")
-  viewCard()
+  exchangeCards()
 });
 
 btnGyarados.addEventListener("click", () => {
   renderPokemon(130, "gyarados.png", "#3DD4FB")
-  viewCard()
+  exchangeCards()
 });
 
 btnPikachu.addEventListener("click", () => {
   renderPokemon(25, "pikachu.png", "#FFFC22")
-  viewCard()
+  exchangeCards()
 });
+
+reloadPage.addEventListener('click', () => {
+  location.reload()
+})
 
 
 

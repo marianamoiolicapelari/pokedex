@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image.png" href="./assets/pokeball.png" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/container.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>POKEMON GO!</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image.png" href="./assets/pokeball.png" />
-  <link rel="stylesheet" href="./css/card.css">
-  <link rel="stylesheet" href="./css/container.css">
-  <link rel="stylesheet" href="./css/menu.css">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap" rel="stylesheet">
-  <title>POKEMON GO!</title>
-</head>
+  <body>
+    <main class="container">
+      <div class="card-back"></div>
 
-<body>
-  <main class="container">
-
-    <div class="card-back">
-    </div>
-
-    <div class="card-principal">
-      <div class="card" id="card-bg">
-        <div class="card-title">
-          <div class="pokemon-name"></div>
-          <div class="pokemon-id"></div>
-        </div>
-        <img class="card-img" src="" alt="Card-Pokemon">
-        <div class="pokemon-status">
-          <div class="pokemon-description">
-            <h3>Description</h3>
-            <p class="type"></p>
-            <p class="xp"></p>
+      <div class="card-principal">
+        <div class="card" id="card-bg">
+          <div class="card-title">
+            <div class="pokemon-name"></div>
+            <div class="pokemon-id"></div>
           </div>
-          <div class="pokemon-skills">
-            <h3>Ability</h3>
-            <p class="habilities"></p>
+          <img class="card-img" src="" alt="Card-Pokemon" />
+          <div class="pokemon-status">
+            <div class="pokemon-description">
+              <h3>Description</h3>
+              <p class="type"></p>
+              <p class="xp"></p>
+            </div>
+            <div class="pokemon-skills">
+              <h3>Ability</h3>
+              <p class="habilities"></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="menu">
-      <button type="button" class="btn-menu" id="btn-bulbasaur">Bulbasaur</button>
-      <button type="button" class="btn-menu" id="btn-charmander">Charmander</button>
-      <button type="button" class="btn-menu" id="btn-dragonite">Dragonite</button>
-      <button type="button" class="btn-menu" id="btn-gyarados">Gyarados</button>
-      <button type="button" class="btn-menu" id="btn-pikachu">Pikachu</button>
-      <div>
-        <img class="logo-menu" id="atualizar" src="./assets/Pokémon-logo.png" alt="Pokemon">
+      <div class="menu" id="menu">
+        <div>
+          <img
+            class="logo-menu"
+            id="atualizar"
+            src="./assets/Pokémon-logo.png"
+            alt="Pokemon"
+          />
+        </div>
       </div>
-    </div>
-  </main>
-  <script src="./js/scripts.js"></script>
-</body>
-
+    </main>
+    <script src="./js/scripts.js"></script>
+  </body>
 </html>

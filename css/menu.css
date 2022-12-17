@@ -1,12 +1,13 @@
-.menu {
+.container .menu {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 250px;
   height: 550px;
+  position: relative;
 }
 
-.btn-menu {
+.container .menu .btn-menu {
   font-size: 1.2rem;
   font-weight: 700;
   text-align: left;
@@ -20,16 +21,16 @@
   cursor: pointer;
 }
 
-.btn-menu:hover {
+.container .menu .btn-menu:hover {
   opacity: 0.7;
   font-size: 1.1rem;
 }
 
-.btn-menu:active {
+.container .menu .btn-menu:active {
   opacity: 0.4;
 }
 
-#btn-bulbasaur {
+.container .menu #btn-bulbasaur {
   background-color:  #59BC38;
   background-image: url(../assets/cabeca-bulbasaur.png);
   background-repeat: no-repeat;
@@ -37,7 +38,7 @@
   background-position: right;
 }
 
-#btn-charmander {
+.container .menu #btn-charmander {
   background-color:  #F68C00;
   background-image: url(../assets/cabeca-charmander.png);
   background-repeat: no-repeat;
@@ -45,7 +46,7 @@
   background-position: right;
 }
 
-#btn-dragonite {
+.container .menu #btn-dragonite {
   background-color:  #FABE00;
   background-image: url(../assets/cabeca-dragonite.png);
   background-repeat: no-repeat;
@@ -53,7 +54,7 @@
   background-position: right;
 }
 
-#btn-gyarados {
+.container .menu #btn-gyarados {
   background-color:  #3DD4FB;
   background-image: url(../assets/cabeca-gyarados.png);
   background-repeat: no-repeat;
@@ -61,7 +62,7 @@
   background-position: right;
 }
 
-#btn-pikachu {
+.container .menu #btn-pikachu {
   background-color: #FFFC22;
   background-image: url(../assets/cabeca-pikachu.png);
   background-repeat: no-repeat;
@@ -69,8 +70,11 @@
   background-position: right;
 }
 
-.logo-menu {
+.container .menu .logo-menu {
   width: 12.5rem;
   margin-top: 2rem;
   cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
 }

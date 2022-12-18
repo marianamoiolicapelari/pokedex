@@ -1,7 +1,7 @@
 # Pokedex
 
 ## 💻 Sobre o Projeto
-
+...
 
 ## 🎨 Layout
 

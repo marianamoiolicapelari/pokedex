@@ -1,11 +1,11 @@
 # Pokedex
 
 ## 💻 Sobre o Projeto
-...
+Pokedex desenvolvida em Vanilla.js. Os dados dos pokemons mostrados em cada card vem da APIPokedex que consumi utilizando o Fetch API. 
 
 ## 🎨 Layout
 
-![image]()
+![image](https://github.com/marianamoiolicapelari/pokedex/blob/main/assets/layout.png)
 
 ## 🛠 Tecnologias
 

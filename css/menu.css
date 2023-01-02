@@ -78,3 +78,14 @@
   right: 2rem;
   bottom: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .container .menu .logo-menu {
+    display: none;
+  }
+
+  .container .menu {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}

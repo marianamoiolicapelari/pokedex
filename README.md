@@ -1,7 +1,7 @@
 # Pokedex
 
 ## 💻 Sobre o Projeto
-Pokedex desenvolvida em Vanilla.js. Os dados dos pokemons mostrados em cada card vem da APIPokedex que consumi utilizando o Fetch API. Tanto os cards quanto os botões foram criados dinamicamente o que facilita a manutenção e a adição dos mesmos.
+Pokedex desenvolvida em Vanilla.js. Os dados dos pokemons mostrados em cada card vem da APIPokedex que consumi utilizando o Fetch API. Tanto os cards quanto os botões foram criados dinamicamente o que facilita a manutenção e a adição dos mesmos. Para criar os efeitos de movimento das cartas utilizei a biblioteca Vanilla-tilt.js
 
 ## 🎨 Layout
 
